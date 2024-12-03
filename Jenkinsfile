@@ -10,7 +10,7 @@ pipeline {
     }
     stage('Running Container') {
       steps {
-          sh 'docker run -p 80:3000 -d vvilasor/node-webapp'
+          sh 'docker run -p 3000:3000 -d vvilasor/node-webapp'
       }
     }
   }
