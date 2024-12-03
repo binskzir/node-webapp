@@ -1,11 +1,6 @@
 pipeline {
   agent { label 'linux-node' }
   stages {
-    stage('Cloning') {
-      steps {
-         git 'https://github.com/binskzir/node-webapp.git'
-        }
-      }
     stage('Building Docker image') {
       steps {
         script {
